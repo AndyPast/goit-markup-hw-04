@@ -1,8 +1,111 @@
-html {
-  /* box-sizing: border-box; */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
+  font-size: 100%;
   font: inherit;
   vertical-align: baseline;
 }
@@ -29,11 +132,7 @@ body {
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  max-width: 1200px;
-  width: 100%;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -42,12 +141,11 @@ body {
 /* Header */
 
 .header {
-  /* display: flex;
-  justify-content: center;
-  background-color: var(--background-color); */
+  display: flex;
+  align-items: center;
+  background-color: var(--background-color);
   border: 1px solid rgba(236, 236, 236, 1);
-  /* width: 1600px; */
-  margin-bottom: 30px;
+  height: 80px;
 }
 
 /* container-header */
@@ -104,9 +202,6 @@ body {
 
 .list-link {
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
-
   color: var(--primary-color);
   font-weight: 500;
   font-size: 14px;
@@ -144,17 +239,16 @@ body {
 }
 
 .box-hero {
-  width: 1600px;
-  height: 600px;
+  max-width: 1600px;
   padding-bottom: 94px;
-
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   background-image: url(../images/шапка.jpg);
+  background-repeat: no-repeat;
 }
 
 .box-text {
-  padding-bottom: 200px;
   text-align: center;
   max-width: 696px;
   margin: auto;
@@ -335,7 +429,7 @@ body {
   width: 1170px;
 }
 
-.section-cards {
+ul.section-cards {
   display: flex;
   flex-wrap: wrap;
   /* margin-right: 30px; */
@@ -360,6 +454,7 @@ body {
 
 .box-cards {
   width: 370px;
+  height: 294px;
   /* margin: 15px; */
 }
 
