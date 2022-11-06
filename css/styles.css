@@ -110,11 +110,11 @@ video {
   vertical-align: baseline;
 }
 
-/* *,
+*,
 *::before,
 *::after {
   box-sizing: inherit;
-} */
+}
 
 :root {
   --background-color: #ffffff;
@@ -201,7 +201,7 @@ body {
 }
 
 .list-link {
-  display: block;
+  /* display: block; */
   color: var(--primary-color);
   font-weight: 500;
   font-size: 14px;
@@ -230,6 +230,10 @@ body {
 .auth-nav .item + .item {
   margin-left: 50px;
 }
+
+/* .tech__link::before {
+  content: ;
+} */
 
 /* Hero */
 
@@ -303,14 +307,26 @@ body {
   padding-right: 0px;
 }
 
-/* .box-works {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  width: 1170px;
-  padding-left: 0px;
-  padding-right: 0px;
-} */
+.box-works-item::before {
+  display: block;
+  content: "";
+  height: 120px;
+  background: #f5f4fa;
+  background-image: url(../images/attentionmin.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 30px;
+}
+
+.box-works-item:nth-child(2)::before {
+  background-image: url(../images/oclockmin.svg);
+}
+.box-works-item:nth-child(3)::before {
+  background-image: url(../images/planningmin.svg);
+}
+.box-works-item:nth-child(4)::before {
+  background-image: url(../images/technologymin.svg);
+}
 
 .text-list {
   color: var(--primary-color);
@@ -347,6 +363,24 @@ body {
 
 /* Наша команда */
 
+.section.section-team {
+  background-color: var(--buttons-color);
+}
+
+/* .foto-cards {
+  width: 1200px;
+  height: 428px;
+} */
+
+.cards {
+  height: 428px;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  border-radius: 0px 0px 4px 4px;
+}
+
 .text-name {
   color: var(--primary-color);
   font-weight: 500;
@@ -367,6 +401,104 @@ body {
 
 .foto-cards {
   margin-bottom: 60px;
+}
+
+.social__list {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: baseline;
+
+  color: rgba(175, 177, 184, 1);
+
+  gap: 10px;
+
+  margin-bottom: 30px;
+  margin-right: 32px;
+  margin-left: 32px;
+}
+
+.social__item {
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social__item:hover,
+.social__item:focus {
+  background-color: #2196f3;
+}
+.social__item:hover .social__icon {
+  fill: #ffffff;
+}
+
+.social__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: currentColor;
+
+  width: 20px;
+  height: 20px;
+  background-position: 50%;
+
+  color: rgb(26, 178, 195);
+  fill: rgba(175, 177, 184, 1);
+}
+
+/* Наши клиенты */
+
+.our__clients {
+  font-family: Roboto;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.clients {
+  display: flex;
+  justify-content: center;
+}
+
+.clients__size {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.client__cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+.client__cards:hover,
+.client__cards:focus {
+  border: 1px solid rgba(33, 150, 243, 1);
+}
+.client__label {
+  fill: rgba(175, 177, 184, 1);
+}
+.client__cards:hover .client__label,
+.client__cards:focus .client__label {
+  fill: rgba(33, 150, 243, 1);
+}
+.client__item {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Footer */
@@ -418,6 +550,54 @@ body {
   color: var(--background-color);
 }
 
+.footer__join {
+  margin-left: 70px;
+}
+
+.footer__social {
+  margin: 0;
+}
+
+.footer__title {
+  color: rgba(255, 255, 255, 1);
+  margin-bottom: 20px;
+}
+.social__item {
+  display: flex;
+  gap: 10px;
+
+  justify-content: center;
+  align-items: center;
+  fill: currentColor;
+
+  width: 44px;
+  height: 44px;
+  background-position: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social__item__footer:hover,
+.social__item__footer:focus {
+  background-color: #f3212f;
+}
+.social__item__footer:hover .social__icon {
+  fill: #ffffff;
+}
+.social__item__footer {
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.conteiner-wrap {
+  display: flex;
+  align-items: baseline;
+}
+
 /* Portfolio */
 
 .header-portfolio {
@@ -427,6 +607,10 @@ body {
   border: 1px solid rgba(236, 236, 236, 1);
   height: 80px;
   margin-bottom: 120px;
+}
+
+img {
+  display: block;
 }
 
 .button-nav {
@@ -463,7 +647,7 @@ body {
 .box-cards {
   width: 370px;
   height: 294px;
-  /* margin: 15px; */
+  background-position: center;
 }
 
 /* Text-hero */
@@ -482,6 +666,14 @@ body {
 
 /* buttons */
 
+.button-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  gap: 8px;
+}
+
 .buttons {
   display: inline-block;
   border-radius: 4px;
@@ -496,7 +688,6 @@ body {
   font-style: Normal;
   cursor: pointer;
   min-height: 38px;
-  padding: 6px 25px;
   gap: 8px;
   border: transparent;
 }
