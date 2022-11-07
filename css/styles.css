@@ -792,13 +792,14 @@ ul {
   margin-bottom: 0px;
 }
 
-.buttons:focus {
-  background-color: var(--buttons-color);
-  color: var(--secondary-color);
-}
+.buttons:focus,
 .buttons:hover {
-  color: var(--buttons-color);
-  border-color: var(--secondary-color);
+  background-color: var(--secondary-color);
+}
+
+.social__item:hover,
+.social__item:focus {
+  background-color: var(--secondary-color);
 }
 
 .buttons {
@@ -844,7 +845,7 @@ ul {
   padding-bottom: 94px;
 }
 
-ul.section__title {
+.section_title {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
