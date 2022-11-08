@@ -144,7 +144,7 @@ img {
 
 body {
   font-family: "Roboto", sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   background-color: var(--background-color);
   font-family: Roboto, sans-serif;
   color: var(--primary-color);
@@ -161,11 +161,8 @@ body {
 /* Header */
 
 .header {
-  /* display: flex;
-  align-items: center; */
   background-color: var(--background-color);
   border: 1px solid rgba(236, 236, 236, 1);
-  /* height: 80px; */
 }
 
 /* container-header */
@@ -241,7 +238,7 @@ ul {
 .site-nav.list {
   display: flex;
   font-weight: medium;
-  line-height: 1.14;
+  line-height: 16px;
   letter-spacing: 0.02em;
   font-weight: 500;
 }
@@ -273,7 +270,7 @@ ul {
   margin-left: auto;
   font-weight: 500;
   font-size: 100%;
-  line-height: 1.14;
+  line-height: 16px;
   letter-spacing: 0.02em;
 }
 .auth-nav .mail {
@@ -289,17 +286,7 @@ ul {
   margin-left: 50px;
 }
 
-.header__link__mail {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  gap: 10px;
-  text-decoration: none;
-  color: var(--contacts-color);
-}
-
+.header__link__mail,
 .header__link__tel {
   display: flex;
   justify-content: center;
@@ -331,6 +318,10 @@ ul {
 .header__link__tel:focus,
 .header__link__tel:hover {
   color: var(--secondary-color);
+}
+
+.tech__link {
+  fill: currentColor;
 }
 
 /* Hero */
@@ -450,7 +441,6 @@ ul {
 
 .text-script {
   font-style: normal;
-
   color: var(--contacts-color);
 }
 
@@ -734,9 +724,10 @@ ul {
 }
 
 .footer__title {
-  color: rgba(255, 255, 255, 1);
+  color: var(--background-color);
   margin-bottom: 20px;
 }
+
 .social__item {
   display: flex;
   gap: 10px;
@@ -792,11 +783,6 @@ ul {
   margin-bottom: 0px;
 }
 
-.buttons:focus,
-.buttons:hover {
-  background-color: var(--secondary-color);
-}
-
 .social__item:hover,
 .social__item:focus {
   background-color: var(--secondary-color);
@@ -810,9 +796,15 @@ ul {
   min-height: 38px;
   padding: 6px 22px;
   border-radius: 4px;
-
   background: var(--buttons-color);
   border: transparent;
+}
+
+.buttons:hover,
+.buttons:focus {
+  background-color: var(--secondary-color);
+  border-radius: 4px;
+  color: var(--background-color);
 }
 
 .blue,
@@ -840,6 +832,14 @@ ul {
   color: var(--background-color);
   cursor: pointer;
 }
+
+.blue:hover,
+.blue:focus {
+  border-radius: 4px;
+  color: var(--background-color);
+}
+
+/* Картинки */
 
 .section__box {
   padding-bottom: 94px;
